@@ -19,7 +19,7 @@ services:
       dockerfile: Dockerfile.dev
       context: ./server
     environment:
-      - MONGODB_URL=${{ secrets.DOCKERHUB_USERNAME }}
+      - MONGODB_URL=${{ secrets.DOCKER_NAME }}
       - JWT_SECRET=sample
       - PORT=5000
     networks:
